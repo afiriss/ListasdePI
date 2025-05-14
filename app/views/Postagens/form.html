@@ -1,0 +1,28 @@
+#{extends 'main.html' /}
+#{set title:'Formulário' /}
+
+<form action = "/Postagens/salvar">
+
+	<div class = "mb-3">
+	<label class = "form-label">Título:</label>
+	<input class = "form-control" type = "text" name ="p.titulo"/>
+	</div>
+	
+	<div class = "mb-3">
+	<label class = "form-label">Conteúdo:</label>
+	<input class = "form-control" type = "text" name = "p.conteudo"/> 
+	</div>
+
+	<div class = "mb-3">
+	<label class = "form-label">Autor:</label>
+	<input class = "form-control" type = "text" name = "p.autor"/> 
+	</div>
+
+	<div class = "mb-3">
+	<label class = "form-label">Data:</label>
+	<input class = "form-control" type = "date" name = "p.data"/> 
+	</div>
+
+	<input class = "btn btn-primary" type = "submit" />
+
+</form>
